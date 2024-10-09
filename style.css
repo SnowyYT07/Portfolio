@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E0E1DD; 
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(7.5px);
+}
+.container {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+.progress-wrapper {
+    width: 80%;
+    margin: 0 auto 30px;
+    position: relative;
+}
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 5px;
+    width: 100%;
+    position: relative;
+}
+.progress {
+    background-color: #3d5583;
+    height: 100%;
+    width: 12%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.notify-btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    background-color: #415A77;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.notify-btn:hover {
+    background-color: #472352;
+}
+.email-form {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+.email-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    color:#E0E1DD;
+    background-color: #252525;
+    border-radius: 10px;
+    width: 300px;
+}
+.email-form input[type="submit"] {  
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #415A77;
+    color: snow;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.email-form input[type="submit"]:hover {
+    background-color: #472352;
+}
+.social {
+    margin-top: 40px;
+}
+.social a {
+    margin: 0 10px;
+    color: #E0E1DD;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.5s ease; 
+}
+
+.social a.linkedin {
+    color: #0077B5; 
+}
+
+
+.social a.instagram {
+    color: #db2763; 
+}
+
+
+.social a.twitter {
+    color: #1DA1F2; 
+}
+
+
+.social a:hover {
+    opacity: 1;
+    color: #E0E1DD;
+}
+
+.coffee-button {
+    margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    background-color: #4c1969;
+    color: #e0e0e0; 
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}   
+
+.coffee-button::before {
+    content: "☕";
+    margin-right: 4px;
+}
+
+.coffee-button:hover {
+    background-color: #5e1f83;
+    transform: translateY(-2px); 
+}
+
+.coffee-button:active {
+    transform: translateY(3px); 
+}
+
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
